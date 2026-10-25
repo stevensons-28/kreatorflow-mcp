@@ -1,11 +1,23 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.stevensons-28/kreatorflow",
+  "name": "ai.kreatorflow/kreatorflow",
+  "description": "Make AI video and images with Seedance and Seedream, plus voice, sound and edits, on your plan.",
   "title": "KreatorFlow",
-  "description": "Make Seedance videos, Seedream images, lip sync and voiceovers from Claude, ChatGPT or Cursor.",
   "version": "1.0.0",
   "websiteUrl": "https://kreatorflow.ai/mcp",
+  "icons": [
+    {
+      "src": "https://kreatorflow.ai/brand/kreatorflow-logo-mark.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "500x500"
+      ]
+    }
+  ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://kreatorflow.ai/api/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://kreatorflow.ai/api/mcp"
+    }
   ]
 }
