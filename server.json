@@ -1,17 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "ai.kreatorflow/kreatorflow",
-  "description": "Make AI video and images with Seedance and Seedream, plus voice, sound and edits, on your plan.",
+  "name": "io.github.stevensons-28/kreatorflow-mcp",
+  "description": "Remote MCP server for Seedance 2.5, Kling and Wan video, Seedream images, lip sync, voice and 3D shot planning (33 tools, OAuth).",
   "title": "KreatorFlow",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "websiteUrl": "https://kreatorflow.ai/mcp",
+  "repository": {
+    "url": "https://github.com/stevensons-28/kreatorflow-mcp",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://kreatorflow.ai/brand/kreatorflow-logo-mark.png",
       "mimeType": "image/png",
-      "sizes": [
-        "500x500"
-      ]
+      "sizes": ["500x500"]
     }
   ],
   "remotes": [
