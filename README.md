@@ -1,8 +1,8 @@
 # KreatorFlow MCP server
 
-Make Seedance videos, Seedream images, lip sync and voiceovers from Claude, ChatGPT, Cursor or VS Code.
+Make Seedance videos, Seedream images, lip sync and voiceovers from Claude, ChatGPT, Cursor or VS Code. 33 tools, OAuth sign-in.
 
-KreatorFlow connects your AI assistant to a full AI media studio. Ask for a video and it generates it with ByteDance's Seedance 2.0 or 2.5, makes images with Seedream, turns a photo and a voice track into a talking or singing video with OmniHuman lip sync, and runs Kitsune motion transfer, object swap and face swap on existing clips. It also reads text aloud, clones voices, makes music and sound effects, transcribes and translates speech, and keeps saved characters consistent across a series.
+KreatorFlow connects your AI assistant to a full AI media studio. Ask for a video and it generates it with ByteDance's Seedance 2.5 or 2.0, makes images with Seedream 5.5, turns a photo and a voice track into a talking or singing video with OmniHuman lip sync, and runs Kitsune motion transfer, object swap and face swap on existing clips. It also reads text aloud, clones voices, makes music and sound effects, transcribes and translates speech, keeps saved characters consistent across a series, and plans scenes in Stage, the free 3D shot planner. It also talks to Kiryu, KreatorFlow's AI director, and uses templates.
 
 KreatorFlow is an official partner of BytePlus, a ByteDance company.
 
@@ -12,7 +12,7 @@ This is a hosted (remote) MCP server. There is nothing to install or run locally
 
 - **Server URL:** `https://kreatorflow.ai/api/mcp` (Streamable HTTP)
 - **Sign-in:** OAuth. Your app opens a KreatorFlow sign-in page; no API key to copy.
-- **Plan:** a paid KreatorFlow plan (Creator, Pro, Max or Business). Generations use your plan credits at studio prices, and failed jobs are refunded automatically.
+- **Plan:** a paid KreatorFlow plan (Creator, Pro, Max or Business) or the $3 48-hour trial on Creator, Pro or Max. Generations use your plan credits at 10% more than the studio price, and failed jobs are refunded automatically.
 
 ### Claude (web and desktop)
 Open Customize, then Connectors, click + Add and choose Add custom connector. Name it KreatorFlow, paste `https://kreatorflow.ai/api/mcp`, click Continue and sign in with your KreatorFlow account.
@@ -39,6 +39,10 @@ Step-by-step setup with screenshots: https://kreatorflow.ai/mcp
 | `save_character`, `list_characters` | Keep a character consistent across a series |
 | `upload_media` | Bring a public file URL into your workspace |
 | `list_history`, `list_models`, `list_templates` | Browse past generations, models and templates |
+| `get_template`, `use_template`, `save_template`, `publish_template` | Use, save and share templates |
+| `create_upload`, `confirm_upload` | Upload a file from your computer |
+| `ask_kiryu`, `get_kiryu_chat` | Let Kiryu, the AI director, drive the studio |
+| `stage_create_scene`, `stage_edit_scene`, `stage_list_examples`, `stage_make_it_real` | Plan scenes in the free Stage 3D shot planner |
 | `get_job`, `get_account` | Check a long job and see your credit balance |
 
 Long jobs (video, image, edits, lip sync) return a job id; the assistant polls `get_job` until the result is ready.
